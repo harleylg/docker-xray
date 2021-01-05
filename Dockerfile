@@ -12,8 +12,6 @@ RUN set -ex \
     && cp ./geosite.dat ./geoip.dat /usr/local/share/xray/ \
     && rm -rf /root/*
 
-COPY config.json /usr/local/etc/xray/
+COPY config.json /etc/xray/
 COPY entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["entrypoint.sh"]
-
-
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

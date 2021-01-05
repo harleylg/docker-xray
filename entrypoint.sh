@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/local/bin/xray -config /usr/local/etc/xray/config.json
+/usr/local/bin/xray -config /etc/xray/config.json
