@@ -3,7 +3,7 @@ LABEL maintainer="Wells Wei <wellsgz@hotmail.com>"
 
 WORKDIR /root
 RUN set -ex \
-    && apk add --no-cache ca-certificates tzdata unzip curl \
+    && apk add --no-cache tzdata unzip curl \
     && wget https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip \
     && unzip Xray-linux-64.zip \
     && chmod +x ./xray \
