@@ -1,5 +1,5 @@
-FROM alpine:latest
-LABEL maintainer="Wells Wei <wellsgz@hotmail.com>"
+FROM caddy:2-alpine
+LABEL maintainer="Harley Long"
 
 WORKDIR /root
 RUN set -ex \
